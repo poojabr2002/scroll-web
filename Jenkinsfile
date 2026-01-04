@@ -42,7 +42,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git branch: "${env.BRANCH_NAME}", url: ''
+                git branch: "${env.BRANCH_NAME}", url: 'https://github.com/poojabr2002/scroll-web.git'
             }
         }
 
@@ -114,4 +114,5 @@ pipeline {
         }
     }
 }
+
 
